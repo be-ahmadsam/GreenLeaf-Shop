@@ -1,23 +1,36 @@
-import React,{ useRef }  from 'react';
+import {Routes, Route} from "react-router-dom"
 
-import Header from './components/Header';
-import Hero from './components/Hero';
-import FeaturedProducts from './components/FeaturedProducts';
-import Footer from './components/Footer';
 import './App.css';
+import Home from './pages/Home';
+import ShoppingBags from "./pages/ShoppingBags";
+import Community from "./pages/Community";
+import Toothbrush from "./pages/Toothbrush";
+import TShirts from "./pages/TShirts";
+
 
 function App() {
-  const featuredProductsRef = useRef(null);
-
-  const scrollToFeaturedProducts = () => {
-    featuredProductsRef.current.scrollIntoView({ behavior: 'smooth' });
-  };
+  
   return (
     <div className="App">
-      <Header />
-      <Hero scrollToFeaturedProducts={scrollToFeaturedProducts} />
-      <FeaturedProducts ref={featuredProductsRef}/>
-      <Footer />
+      <Routes>
+      <Route
+      element={<Home/>}
+      path="/"/>
+      <Route
+      element={<ShoppingBags/>}
+      path="/shoppingbags"/>
+     
+      <Route
+      element={<Community/>}
+      path="/community"/>
+      <Route
+      element={<Toothbrush/>}
+      path="/toothbrush"/>
+      <Route
+      element={<TShirts/>}
+      path="/tshirts"/>
+      </Routes>
+      
     </div>
   );
 }
