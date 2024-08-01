@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
+import logo from '../images/Leaf1.png'
 
 const Header = () => {
   return (
@@ -8,7 +9,7 @@ const Header = () => {
       <div className="logo">
         GreenLeaf Shop
         <img 
-          src={`${process.env.PUBLIC_URL}/leaf1.png`} 
+          src={logo} 
           alt="Leaf Logo" 
           className="logo-img" 
         />
