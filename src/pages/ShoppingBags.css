@@ -1,0 +1,67 @@
+.shopping-bags-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .product-card {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .product-card h2 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .product-card p {
+    font-size: 16px;
+  }
+  
+  .price {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .product-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .cart-button, .buy-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cart-button:hover, .buy-button:hover {
+    background-color: #45a049;
+  }
+  
